@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        {% for details in form %}
+            <h1 style="text-align: center;color:red">User : {{details.user}}</h1><hr>
+            <h3 style="text-align: center;color:green">Father Name : <span style="color:blue">{{details.father}}</span></h3>
+            <h3 style="text-align: center;color:green">Mother Name : <span style="color:blue">{{details.mother}}</span></h3>
+            <h3 style="text-align: center;color:green">Brother Name : <span style="color:blue">{{details.brother}}</span></h3>
+            <h3 style="text-align: center;color:green">Sister Name : <span style="color:blue">{{details.sister}}</span></h3>
+        {% endfor %}
+    </div>
+        
+{% endblock content %}
